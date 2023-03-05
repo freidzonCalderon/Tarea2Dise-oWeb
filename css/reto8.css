@@ -1,0 +1,10 @@
+img {
+	max-height: 7rem;
+	max-width: 15rem;
+	object-fit: cover;
+}
+
+img:hover {
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}

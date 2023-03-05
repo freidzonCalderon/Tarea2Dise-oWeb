@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&family=Roboto:wght@100&display=swap");
+
+.titulo {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+
+.subtitulo {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+
+.iframe-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.iframe-container:hover {
+	box-shadow: rgba(255, 247, 247, 0.55) 0px 5px 15px;
+}
+
+.contenido {
+	background-color: #0e142d;
+}
+
+@media (max-width: 600px) {
+	.iframe-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 5rem;
+		max-height: 100%;
+	}
+}
+
+@media (min-width: 600px) {
+	.iframe-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 10rem;
+		max-height: 100%;
+	}
+}
+
+@media (min-width: 900px) {
+	.iframe-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		max-height: 100%;
+	}
+}

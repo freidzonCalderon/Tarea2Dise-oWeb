@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&family=Roboto:wght@100&display=swap");
+
+.titulo {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+
+.subtitulo {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+}
+
+.botones {
+	display: flex;
+	justify-content: center;
+}
+
+.icon i {
+	margin: 0.5rem;
+	color: #7f2ccb;
+	padding: 1rem;
+	border: 2px solid #7f2ccb;
+	border-radius: 100%;
+}
+
+.icon i:hover {
+	color: #414361;
+	border: 2px solid #414361;
+}
+
+@media (max-width: 600px) {
+	.contenedor {
+		margin: 50px auto;
+		width: 200px;
+		text-align: center;
+	}
+
+	.progress2 {
+		padding: 3px;
+		border-radius: 30px;
+		background: rgba(0, 0, 0, 0.25);
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+			0 1px rgba(255, 255, 255, 0.08);
+	}
+}
+
+@media (min-width: 600px) {
+	.contenedor {
+		margin: 100px auto;
+		width: 300px;
+		text-align: center;
+	}
+
+	.progress2 {
+		padding: 3px;
+		border-radius: 30px;
+		background: rgba(0, 0, 0, 0.25);
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+			0 1px rgba(255, 255, 255, 0.08);
+	}
+}
+
+@media (min-width: 900px) {
+	.contenedor {
+		margin: 100px auto;
+		width: 500px;
+		text-align: center;
+	}
+
+	.progress2 {
+		padding: 3px;
+		border-radius: 30px;
+		background: rgba(0, 0, 0, 0.25);
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+			0 1px rgba(255, 255, 255, 0.08);
+	}
+}
+
+.progress-bar2 {
+	height: 18px;
+	border-radius: 30px;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.05)
+	);
+	transition: 0.4s linear;
+	transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+	width: 90%;
+	background-color: #7f2ccb;
+	animation: progressAnimation 6s;
+}
+
+@keyframes progressAnimation {
+	0% {
+		width: 5%;
+		background-color: #414361;
+	}
+	100% {
+		width: 90%;
+		background-color: #7f2ccb;
+	}
+}
